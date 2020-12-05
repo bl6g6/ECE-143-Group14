@@ -1,6 +1,6 @@
 # ECE-143-Group14-FINAL PROJECT
 ## Used Car Data Analysis, Visualization and Price Prediction
-## Teammates: Bing Li, Jie Wu, Atman Patel, Shang Wang
+### Teammates: Bing Li, Jie Wu, Atman Patel, Shang Wang
  
 
 ECE143_Group14.ipynb is the jupyter notebook file for this project.
