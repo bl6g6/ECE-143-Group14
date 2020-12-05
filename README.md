@@ -7,6 +7,8 @@ ECE143_Group14.ipynb is the jupyter notebook file for this project.
 
 graphs is the folder that saves our useful grapsh during this project. 
 
+ECE143 Presentation.pdf is the final pdf file of our presentation.
+
 Data_Cleaning.py is the code file to proceed data cleaning.
 
 cleaned_df.csv is the dataset file saved after data cleaning.
