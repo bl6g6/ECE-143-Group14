@@ -19,6 +19,8 @@ is the world's largest collection of used vehicles for sale,this data is scraped
             | - run_all.ipynb - combination of all codes
     | - graphs
         | - graphs is the folder that saves our useful grapsh during this project. 
+    | - presentation
+        | - ECE143_Group14_Presentation.pdf is the final presentation file of our project.
  
 
 # Third-party modules:
