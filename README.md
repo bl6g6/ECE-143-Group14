@@ -1,7 +1,7 @@
 # ECE-143-Group14-Final project
 ## Used Car Price Prediction
 ### Teammates: Bing Li, Jie Wu, Atman Patel, Shang Wang
-This repo contains the code, dataset, presentation file and graphs for the ECE143-Group 14 
+This repo contains the code, dataset, presentation file and graphs for the ECE 143-Group 14 
 
 # Dataset
 [Craigslist](https://www.kaggle.com/austinreese/craigslist-carstrucks-data)
