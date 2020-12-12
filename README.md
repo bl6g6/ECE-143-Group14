@@ -11,11 +11,12 @@ is the world's largest collection of used vehicles for sale,this data is scraped
     | - data
         | - cleaned_df.csv (created when Data_Cleaning.py)
     | - scripts
-        | - py files for each part
+        | - py files
             | - Data_Cleaning.py is the code file to proceed data cleaning.
             | - Visulization.py is the code file to visualize data.
             | - prediction.py is the code file to train a model and predict.
-        | - run_all.ipynb - contains the whole code (combination of all codes)
+        | - ipynb file
+            | - run_all.ipynb - combination of all codes
     | - graphs
         | - graphs is the folder that saves our useful grapsh during this project. 
  
