@@ -140,9 +140,9 @@ def predict(df):
 
 
 if __name__=="__main__":
-    ## import data
+    
     print("Importing Data")
-    df_cleaned = pd.read_csv('cleaned_df_with_manufact.csv', keep_default_na=False)
+    df_cleaned = pd.read_csv('data/cleaned_df.csv', keep_default_na=False)
 
     print("Processing features")
     df_processed = process_features(df_cleaned)

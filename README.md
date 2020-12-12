@@ -5,29 +5,33 @@ This repo contains the code, dataset, presentation file and graphs for the ECE 1
 
 # Dataset
 [Craigslist](https://www.kaggle.com/austinreese/craigslist-carstrucks-data)
-is the world's largest collection of used vehicles for sale,this data is scraped every few months, it contains most all relevant information that Craigslist provides on car sales including columns like price, condition, manufacturer, latitude/longitude, and 18 other categories
+is the world's largest collection of used vehicles for sale,this data is scraped every few months, it contains most all relevant information that Craigslist provides on car sales including columns like price, condition, manufacturer, latitude/longitude, and 18 other categories. Since the dataset is large, we've only included the cleaned dataset in our github repo.
 
-# Files:
+# File Structure:
     | - data
+        | - maps - contains the files needed to plot the cloropleth (US states) maps
         | - cleaned_df.csv (created when Data_Cleaning.py)
     | - scripts
-        | - py files
-            | - Data_Cleaning.py is the code file to proceed data cleaning.
-            | - Visulization.py is the code file to visualize data.
-            | - prediction.py is the code file to train a model and predict.
-        | - ipynb file
-            | - run_all.ipynb - combination of all codes
+        | - data_cleaning.py is the code file to proceed data cleaning.
+        | - prediction.py is the code file to train a model and predict.
+    | - all_visuals.py - contains all the important visualizations
+    | - UI
+        | - user_interface.py - contains the script to run user interace
     | - plots
-        | - graphs is the folder that saves our useful grapsh during this project. 
-    | - presentation
-        | - ECE143_Group14_Presentation.pdf is the final presentation file of our project.
+        | - prediction_results - contains all the performance metrics in form of plots
+        | - data_analysis - contains the trends found in data
+    | - Presentation.pdf is the final presentation file of our project.
     | - README.md
 
+# How to Run the Code:
+- Prediction: python scripts/prediction.py
     
 # Third-party modules:
-    import numpy as np
-    import pandas as pd
-    import seaborn as sns
-    import matplotlib.pyplot as plt
+    numpy
+    pandas
+    seaborn
+    matplotlib
+    scikit-learn
+    geopandas
 
 
