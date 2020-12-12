@@ -11,6 +11,9 @@ is the world's largest collection of used vehicles for sale,this data is scraped
     | - data
         | - maps - contains the files needed to plot the cloropleth (US states) maps
         | - cleaned_df.csv (created by Data_Cleaning.py)
+    | - dev_notebooks
+        | - visualization.ipynb generates plots for dataset analysis
+        | - Prediction.ipynb contains initial development attempts on price prediction 
     | - scripts
         | - data_cleaning.py is the code file to proceed data cleaning.
         | - prediction.py is the code file to train a model and predict.
