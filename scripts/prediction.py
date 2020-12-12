@@ -57,16 +57,31 @@ def process_features(df):
 
 
 def loss_MSE(y_true, y_pred):
+    """
+    Description:    Calculates the mean squared error
+    Parameters:     true labels, predicted labels
+    """
     return mean_squared_error(y_true, y_pred)**0.5
 
-# find whether our prediction is correct within a certain threshold
 def accuracy(y_true, y_pred, thresh=100):
+    """
+    Description:    Calculated the accuracy of prediction (true if within +- threshold)
+    Parameters:     true labels, predicted labels, threshold
+    """
     return np.sum(np.where(abs(y_true-y_pred)<thresh, 1, 0)) / len(y_true)
 
 def acc_r2(y_true, y_pred):
+    """
+    Description:    Calculated the r2 score
+    Parameters:     true labels, predicted labels, threshold
+    """
     return round(r2_score(y_true, y_pred) * 100, 2)
 
 def get_results(model, y_train, y_test, y_pred_train, y_pred_test, threshold):
+    """
+    Description:    Calculated the mse, accuracy, r2 score for train and test data
+    Parameters:     true labels (both train and test), predicted labels (both train and test), threshold
+    """
     mse_train = loss_MSE(y_train, y_pred_train)
     mse_test = loss_MSE(y_test, y_pred_test)
     acc_train = accuracy(y_train, y_pred_train, threshold)
@@ -75,8 +90,8 @@ def get_results(model, y_train, y_test, y_pred_train, y_pred_test, threshold):
     r2_test = acc_r2(y_test, y_pred_test)
     return mse_train, mse_test, acc_train, acc_test, r2_train, r2_test
 
-def save_plots(f_path, results):
 
+def save_plots(f_path, results):
     ax1 = results.set_index('model_name')[['mse_test','mse_train']].plot(kind='bar', grid=True, title='Mean Squared Error')
     plt.xticks(rotation=45)
     ax1.figure.savefig(f_path + '/mse.png', bbox_inches='tight')
@@ -85,9 +100,9 @@ def save_plots(f_path, results):
     plt.xticks(rotation=45)
     ax2.figure.savefig(f_path + '/accuracy.png', bbox_inches='tight')
 
-    ax2 = results.set_index('model_name')[['r2_test','r2_train']].plot(kind='bar', grid=True, title='R2 Score')
+    ax3 = results.set_index('model_name')[['r2_test','r2_train']].plot(kind='bar', grid=True, title='R2 Score')
     plt.xticks(rotation=45)
-    ax2.figure.savefig(f_path + '/r2 score.png', bbox_inches='tight')
+    ax3.figure.savefig(f_path + '/r2 score.png', bbox_inches='tight')
 
 def predict(df):
     """
@@ -95,7 +110,6 @@ def predict(df):
     Parameters:     df - processed df ready for ML pipeline
     Return:         Performance results
     """
-
     model_results = dict()
 
     models = {'Linear Regression':LinearRegression(), 'Extra Trees Regression':ExtraTreesRegressor(max_depth=18),
@@ -136,7 +150,7 @@ def predict(df):
     df_results = pd.DataFrame(results)
 
     
-    save_plots(f_path = "prediction_plots", results=df_results)
+    save_plots(f_path = "plots/prediction_results", results=df_results)
 
 
 if __name__=="__main__":
