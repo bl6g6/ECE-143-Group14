@@ -10,13 +10,13 @@ is the world's largest collection of used vehicles for sale,this data is scraped
 # File Structure:
     | - data
         | - maps - contains the files needed to plot the cloropleth (US states) maps
-        | - cleaned_df.csv (created when Data_Cleaning.py)
+        | - cleaned_df.csv (created by Data_Cleaning.py)
     | - scripts
         | - data_cleaning.py is the code file to proceed data cleaning.
         | - prediction.py is the code file to train a model and predict.
     | - All_visuals.ipynb - contains all the important visualizations
     | - UI
-        | - user_interface.py - contains the script to run user interace
+        | - user_interface.py - contains the script to run user interace for prediction
     | - plots
         | - prediction_results - contains all the performance metrics in form of plots
         | - data_analysis - contains the trends found in data
