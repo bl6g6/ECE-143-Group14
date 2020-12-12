@@ -4,8 +4,8 @@
 This repo contains the code, dataset, presentation file and graphs for the ECE143-Group 14 
 
 # Dataset
-[ Craigslist)](https://www.kaggle.com/austinreese/craigslist-carstrucks-data)
-Craigslist is the world's largest collection of used vehicles for sale,this data is scraped every few months, it contains most all relevant information that Craigslist provides on car sales including columns like price, condition, manufacturer, latitude/longitude, and 18 other categories
+[Craigslist](https://www.kaggle.com/austinreese/craigslist-carstrucks-data)
+is the world's largest collection of used vehicles for sale,this data is scraped every few months, it contains most all relevant information that Craigslist provides on car sales including columns like price, condition, manufacturer, latitude/longitude, and 18 other categories
 
 # Files:
     | - data
