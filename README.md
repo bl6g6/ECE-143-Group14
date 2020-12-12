@@ -14,7 +14,7 @@ is the world's largest collection of used vehicles for sale,this data is scraped
     | - scripts
         | - data_cleaning.py is the code file to proceed data cleaning.
         | - prediction.py is the code file to train a model and predict.
-    | - all_visuals.py - contains all the important visualizations
+    | - All_visuals.ipynb - contains all the important visualizations
     | - UI
         | - user_interface.py - contains the script to run user interace
     | - plots
@@ -30,6 +30,7 @@ is the world's largest collection of used vehicles for sale,this data is scraped
     numpy
     pandas
     seaborn
+    math
     matplotlib
     scikit-learn
     geopandas
