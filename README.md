@@ -25,6 +25,7 @@ is the world's largest collection of used vehicles for sale,this data is scraped
 
 # How to Run the Code:
 - Prediction: python scripts/prediction.py
+- UI: python UI/user_interface.py model_path (please download our trained model from https://drive.google.com/file/d/1zLa-amGhOnBF1c_3rw4sW9pMXEYJZNqE/view)
     
 # Third-party modules:
     numpy
