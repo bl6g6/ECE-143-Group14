@@ -4,7 +4,7 @@ import pandas as pd
 from tkinter import messagebox
 import joblib
 
-
+# create window for UI
 window = tk.Tk()
 window.title("Used Car Price Prediction")
 window.geometry("500x600+10+20")
@@ -20,6 +20,7 @@ input_df = pd.DataFrame(input_dict)
 # load model
 model_etr = joblib.load('./ECE-143-Group14/model_etr.model')
 
+# create combobox class for selecting options
 class Combobox():
     def __init__(self, options):
         # create a combobox
@@ -32,6 +33,7 @@ class Combobox():
         # set default value to idx 0
         self.cmb.current(0)
 
+# default manufacturers
 options_manufacturer = ('ford', 'chevrolet', 'ram', 'buick', 'nissan', 'hyundai', 'dodge',
        'subaru', 'toyota', 'lexus', 'volvo', 'chrysler', 'jeep', 'acura',
        'gmc', 'kia', 'honda', 'volkswagen', 'bmw', 'null', 'pontiac',
@@ -39,6 +41,7 @@ options_manufacturer = ('ford', 'chevrolet', 'ram', 'buick', 'nissan', 'hyundai'
        'mercury', 'mercedes-benz', 'mini', 'mitsubishi', 'jaguar',
        'infiniti', 'rover', 'tesla', 'land rover', 'alfa-romeo')
 
+# create combobox for Manufacturer, Cylinders, Condition, Fuel, Transmission, Drive and Type
 tk.Label(window, text="Manufacturer").pack()
 cmb_manufacturer = Combobox(options_manufacturer)
 
@@ -66,10 +69,7 @@ tk.Label(window, text="Type").pack()
 options_type = ('SUV', 'bus', 'convertible', 'coupe', 'hatchback', 'mini-van', 'offroad', 'other', 'pickup', 'sedan', 'truck', 'van', 'wagon')
 cmb_type = Combobox(options_type)
 
-# set place
-
-
-    
+# Create entries for Odometer and Year
 tk.Label(window, text="Odometer").pack()
 entry_odometer = tk.Entry(window, bd = 5)
 entry_odometer.pack()
@@ -78,6 +78,7 @@ tk.Label(window, text="Year").pack()
 entry_year = tk.Entry(window, bd = 5)
 entry_year.pack()
 
+# executing function for generating predicted price after hitting the submit button
 def exec():
     # input_df['manufacturer'] = cmb_manufacturer.cmb.get()
     # input_df['manufacturer'].replace(price_buckets, inplace=True)
@@ -126,7 +127,9 @@ def set_dummy(idx, prefix, options):
         else:
             input_df[prefix+val] = 0
 
+# submit button
 button = tk.Button(window, width=20, height=2, text ="Submit", command = exec)
 button.pack()
 
+# set mainloop for the ui in incase it exits
 window.mainloop()
