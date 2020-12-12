@@ -2,10 +2,14 @@
 ## Used Car Price Prediction
 ### Teammates: Bing Li, Jie Wu, Atman Patel, Shang Wang
 This repo contains the code, dataset, presentation file and graphs for the ECE143-Group 14 
+
+# Dataset
+[ Craigslist)](https://www.kaggle.com/austinreese/craigslist-carstrucks-data)
+Craigslist is the world's largest collection of used vehicles for sale,this data is scraped every few months, it contains most all relevant information that Craigslist provides on car sales including columns like price, condition, manufacturer, latitude/longitude, and 18 other categories
+
 # Files:
-    | - dataset
-        | - vehicles.csv
-        | - cleaned_df.csv (created when run preprocess.py)
+    | - data
+        | - cleaned_df.csv (created when Data_Cleaning.py)
     | - scripts
         | - py files for each part
             | - Data_Cleaning.py is the code file to proceed data cleaning.
