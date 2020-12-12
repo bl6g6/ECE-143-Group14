@@ -17,12 +17,13 @@ is the world's largest collection of used vehicles for sale,this data is scraped
             | - prediction.py is the code file to train a model and predict.
         | - ipynb file
             | - run_all.ipynb - combination of all codes
-    | - graphs
+    | - plots
         | - graphs is the folder that saves our useful grapsh during this project. 
     | - presentation
         | - ECE143_Group14_Presentation.pdf is the final presentation file of our project.
- 
+    | - README.md
 
+    
 # Third-party modules:
     import numpy as np
     import pandas as pd
